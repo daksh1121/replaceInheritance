@@ -35,4 +35,10 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    public void testPushPopOperation() {
+        myStack<Integer> stackList = new myStack<>();
+        stackList.push(7);
+        assertEquals(7, stackList.pop().intValue());
+    }
 }
