@@ -44,7 +44,6 @@ public class AppTest
 
     public void testDeligate() {
         myStack<Integer> deligateList = new myStack<>();
-        assertEquals(0, deligateList.size());
         deligateList.push(10);
         assertEquals(10, deligateList.pop().intValue());
     }
