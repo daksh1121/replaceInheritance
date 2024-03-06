@@ -1,9 +1,16 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.EmptyStackException;
 
 public class myStack<E> extends ArrayList<E> {
+
+    private final ArrayList<E> deligate;
+
+    public myStack() {
+        this.deligate = new ArrayList<>();
+    }
 
     public void push(E e){
         add(e);
