@@ -42,9 +42,15 @@ public class AppTest
         assertEquals(7, stackList.pop().intValue());
     }
 
-    public void testDeligate() {
-        myStack<Integer> deligateList = new myStack<>();
-        deligateList.push(10);
-        assertEquals(10, deligateList.pop().intValue());
+    public void testDelegate() {
+        myStack<Integer> delegateList = new myStack<>();
+        delegateList.push(10);
+        assertEquals(10, delegateList.pop().intValue());
+    }
+
+    public void testDelegateWithoutArrayListExtension() {
+        myStack<Integer> delegationList = new myStack<>();
+        delegationList.push(18);
+        assertEquals(18, delegationList.pop().intValue());
     }
 }
