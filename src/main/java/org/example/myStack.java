@@ -8,7 +8,7 @@ public class myStack<E> extends ArrayList<E> {
     private final ArrayList<E> deligate;
 
     public myStack() {
-        this.deligate = new ArrayList<>();
+        deligate = new ArrayList<>();
     }
 
     public void push(E e){
